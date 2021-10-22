@@ -11,7 +11,7 @@
 
 function shortcode_ap_cart_subtotal() {
 
-    return WC()->cart->get_subtotal();
+    echo WC()->cart->get_subtotal();
 
 }
 add_shortcode('ap_get_subtotal', 'shortcode_ap_cart_subtotal');
