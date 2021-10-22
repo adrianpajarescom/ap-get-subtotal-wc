@@ -87,9 +87,7 @@ function shortcode_ap_cart_subtotal() {
     $options = get_option( 'ap_tools_settings' );
 	$fsquantity = $options['ap_tools_text_field_0'];
 
-    $percentage = $fsquantity;
-
-    return $percentage;
+    return $fsquantity;
 
 }
 add_shortcode('ap_get_subtotal', 'shortcode_ap_cart_subtotal');
