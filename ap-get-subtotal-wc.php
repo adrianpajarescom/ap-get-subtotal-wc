@@ -19,7 +19,7 @@ function ap_tools_settings_init_ap_get_subtotal(  ) {
 	add_settings_section(
 		'ap_tools_pluginPage_section', 
 		__( 'In this page you can modify some useful data.', 'td_ap_tools' ), 
-		'ap_tools_settings_section_callback', 
+		'ap_tools_settings_section_02_callback', 
 		'pluginPage'
 	);
 
