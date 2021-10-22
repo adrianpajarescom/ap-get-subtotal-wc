@@ -14,7 +14,7 @@ add_action( 'admin_init', 'ap_tools_settings_init_ap_get_subtotal' );
 
 function ap_tools_settings_init_ap_get_subtotal(  ) { 
 
-	register_setting( 'pluginPage', 'ap_tools_settings' );
+	register_setting( 'pluginPage', 'ap_tools_settings_subtotal' );
 
 	add_settings_section(
 		'ap_tools_pluginPage_section_subtotal', 
