@@ -9,16 +9,6 @@
  * License:           MIT
  */
 
-function shortcode_ap_cart_subtotal() {
-
-    global $woocommerce;
-    $sub = $woocommerce->cart->subtotal;
-
-    return $sub;
-
-}
-add_shortcode('ap_get_subtotal', 'shortcode_ap_cart_subtotal');
-
 add_action( 'admin_menu', 'ap_tools_add_admin_menu' );
 add_action( 'admin_init', 'ap_tools_settings_init' );
 
@@ -87,3 +77,19 @@ function ap_tools_options_page(  ) {
 		<?php
 
 }
+
+
+function shortcode_ap_cart_subtotal() {
+
+    global $woocommerce;
+    $sub = $woocommerce->cart->subtotal;
+
+    $options = get_option( 'ap_tools_settings' );
+	$fsquantity = $options['ap_tools_text_field_0'];
+
+    $percentage = ($/$fsquantity) * 100
+
+    return $percentage;
+
+}
+add_shortcode('ap_get_subtotal', 'shortcode_ap_cart_subtotal');
