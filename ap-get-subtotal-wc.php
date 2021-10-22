@@ -17,4 +17,4 @@ function shortcode_ap_cart_subtotal() {
     return $sub;
 
 }
-add_shortcode('ap-cart-subtotal', 'shortcode_ap_cart_subtotal');
+add_shortcode('ap_get_subtotal', 'shortcode_ap_cart_subtotal');
