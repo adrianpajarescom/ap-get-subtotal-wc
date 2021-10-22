@@ -16,6 +16,13 @@ function ap_tools_settings_init_ap_get_subtotal(  ) {
 
 	register_setting( 'pluginPage', 'ap_tools_settings' );
 
+	add_settings_section(
+		'ap_tools_pluginPage_section', 
+		__( 'Your section description', 'td_ap_tools' ), 
+		'ap_tools_settings_section_callback', 
+		'pluginPage'
+	);
+
 	add_settings_field( 
 		'ap_tools_text_field_0', 
 		__( 'Free Shipping Quantity', 'td_ap_tools' ), 
