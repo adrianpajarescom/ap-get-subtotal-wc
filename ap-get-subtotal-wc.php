@@ -47,7 +47,7 @@ function ap_tools_text_field_0_render(  ) {
 
 	$options = get_option( 'ap_tools_settings' );
 	?>
-	<input type='text' name='ap_tools_settings[ap_tools_text_field_0]' value='<?php echo $options['ap_tools_text_field_0']; ?>'>
+	<input type='number' name='ap_tools_settings[ap_tools_text_field_0]' value='<?php echo $options['ap_tools_text_field_0']; ?>'>
 	<?php
 
 }
