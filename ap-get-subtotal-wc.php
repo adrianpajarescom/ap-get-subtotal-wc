@@ -121,7 +121,7 @@ function shortcode_ap_cart_display() {
     $options = get_option( 'ap_tools_settings' );
 	$fsquantity = $options['ap_tools_text_field_0'];
 
-    return $sub .' € / '. $fsquantity .' €'.;
+    return $sub .' € / '. $fsquantity .' €';
 
 }
 add_shortcode('ap_get_display', 'shortcode_ap_cart_display');
