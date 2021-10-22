@@ -78,8 +78,7 @@ function ap_tools_options_page(  ) {
 
 }
 
-
-function shortcode_ap_cart_subtotal() {
+function shortcode_ap_cart_per() {
 
     global $woocommerce;
     $sub = $woocommerce->cart->subtotal;
@@ -90,4 +89,25 @@ function shortcode_ap_cart_subtotal() {
     return $sub / $fsquantity * 100;
 
 }
+add_shortcode('ap_get_per', 'shortcode_ap_cart_per');
+
+
+function shortcode_ap_cart_subtotal() {
+
+    global $woocommerce;
+    $sub = $woocommerce->cart->subtotal;
+
+    return $sub;
+
+}
 add_shortcode('ap_get_subtotal', 'shortcode_ap_cart_subtotal');
+
+function shortcode_ap_cart_fsquantity() {
+
+    $options = get_option( 'ap_tools_settings' );
+	$fsquantity = $options['ap_tools_text_field_0'];
+
+    return $fsquantity;
+
+}
+add_shortcode('ap_get_fsquantity', 'shortcode_ap_cart_fsquantity');
