@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Plugin Name:       adrianpajares.com - Get Subtotal Cart
+ * Plugin Name:       adrianpajares.com - Get Percentage (Cart Subtotal/Free Shipping)
  * Plugin URI:        https://adrianpajares.com/
- * Description:       Plugin to get the subtotal in cart. Shotcode: [ap_get_subtotal]
- * Version:           1.0
+ * Description:       Plugin to get the subtotal in cart and define free shipping quantity. You can modify the free shipping quantity at setting page. Shotcode: [ap_get_subtotal]
+ * Version:           2.0
  * Author:            adrianpajares.com
  * License:           MIT
  */
