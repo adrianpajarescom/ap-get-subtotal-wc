@@ -11,10 +11,7 @@
 
 function shortcode_ap_cart_subtotal() {
 
-    global $woocommerce;
-    $sub = $woocommerce->cart->subtotal;
-
-    return $sub;
+    return WC()->cart->get_subtotal();
 
 }
 add_shortcode('ap_get_subtotal', 'shortcode_ap_cart_subtotal');
