@@ -14,18 +14,18 @@ add_action( 'admin_init', 'ap_tools_settings_init_ap_get_subtotal' );
 
 function ap_tools_settings_init_ap_get_subtotal(  ) { 
 
-	register_setting( 'pluginPage', 'ap_tools_settings_subtotal' );
+	register_setting( 'pluginPage', 'ap_tools_settings' );
 
 	add_settings_section(
-		'ap_tools_pluginPage_section_subtotal', 
-		__( 'In this page you can modify some useful data.', 'td_ap_tools_subtotal' ), 
+		'ap_tools_pluginPage_section', 
+		__( 'In this page you can modify some useful data.', 'td_ap_tools' ), 
 		'ap_tools_settings_section_callback', 
 		'pluginPage'
 	);
 
 	add_settings_field( 
 		'ap_tools_text_field_0', 
-		__( 'Free Shipping Quantity', 'td_ap_tools_subtotal' ), 
+		__( 'Free Shipping Quantity', 'td_ap_tools' ), 
 		'ap_tools_text_field_0_render', 
 		'pluginPage', 
 		'ap_tools_pluginPage_section' 
