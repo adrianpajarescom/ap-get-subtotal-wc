@@ -44,13 +44,6 @@ function ap_tools_text_field_0_render(  ) {
 
 }
 
-
-function ap_tools_settings_section_callback(  ) { 
-
-	echo __( 'SECTION SUBTOTAL If you have some question, please contact with us at adrian@adrianpajares.com', 'td_ap_tools' );
-
-}
-
 function shortcode_ap_cart_per() {
 
     global $woocommerce;
